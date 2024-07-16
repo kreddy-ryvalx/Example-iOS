@@ -31,6 +31,7 @@ xcrun xcodebuild \
     -configuration "${CONFIGURATION}" \
     -sdk "${SDK}" \
     -parallelizeTargets \
+    -allowProvisioningUpdates \
     -showBuildTimingSummary \
     -disableAutomaticPackageResolution \
     -derivedDataPath "${DERIVED_DATA_PATH}" \
@@ -41,6 +42,7 @@ xcrun xcodebuild \
 
 xcrun xcodebuild \
     -exportArchive \
+    -allowProvisioningUpdates \
     -exportOptionsPlist "${EXPORT_OPTIONS_FILE}" \
     -archivePath "${ARCHIVE_PATH}" \
     -exportPath "${ARTIFACT_PATH}/${SCHEME}.ipa"
