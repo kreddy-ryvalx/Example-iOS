@@ -12,7 +12,7 @@ trap finish EXIT
 
 SDK="${SDK:-iphoneos}"
 WORKSPACE="${WORKSPACE:-demo/demo.xcworkspace}"
-SCHEME="${SCHEME:-demo/demo}"
+SCHEME="${SCHEME:-demo}"
 CONFIGURATION=${CONFIGURATION:-Release}
 
 BUILD_DIR=${BUILD_DIR:-.build}
