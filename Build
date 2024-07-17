@@ -24,7 +24,7 @@ CURRENT_PROJECT_VERSION=${BUILD_NUMBER:-0}
 EXPORT_OPTIONS_FILE="Support/ExportOptions.plist"
 
 rm -rf "${RESULT_BUNDLE_PATH}"
-
+#testing
 xcrun xcodebuild \
     -workspace "${WORKSPACE}" \
     -scheme "${SCHEME}" \
